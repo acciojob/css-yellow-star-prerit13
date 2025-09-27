@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Star</title>
+  <style>
+    .star {
+      width: 156px;
+      height: 156px;
+      background: yellow; /* yellow color */
+      clip-path: polygon(
+        50% 0%,   /* top */
+        61% 35%,  /* right upper */
+        98% 35%,  /* right */
+        68% 57%,  /* right lower */
+        79% 91%,  /* bottom right */
+        50% 70%,  /* bottom middle */
+        21% 91%,  /* bottom left */
+        32% 57%,  /* left lower */
+        2% 35%,   /* left */
+        39% 35%   /* left upper */
+      );
+    }
+
+    
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="star"></div>
 </body>
-
 </html>
